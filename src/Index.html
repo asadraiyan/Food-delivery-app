@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyOnlineMeal.com</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #navbar {
+        display: flex;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+      }
+      #logo {
+        margin: 15px 15px;
+      }
+      #logo img {
+        margin: 3px 30px;
+        height: 60px;
+      }
+     
+      #navbar ul {
+        display: flex;
+      }
+      #navbar::before {
+        content: " ";
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+      }
+      #navbar ul li a {
+        display: block;
+        padding: 4px 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        color: white;
+      }
+      #navbar ul li a:hover {
+        color: black;
+        background-color: rgb(227, 212, 240);
+      }
+      #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 530px;
+      }
+      #home::before {
+        content: " ";
+        background: url(/Images/italian-cuisine-ge079cefe6_1920.jpg) no-repeat
+          center center/cover;
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      #home h1{
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .h-primary {
+        font-size: 3rem;
+        padding: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .h-secondary {
+        font-size: 2.1rem;
+        padding: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .btn{
+        padding: 5px 22px;
+        background-color: rgb(231, 161, 148);
+        border: 2px solid rgb(49, 47, 47);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+      }
+    .center{
+        text-align: center;
+    }
+    #services{
+        display: flex;
+        margin: 34px;
+    }
+    #services .box{
+        /* border: 2px solid blue; */
+        padding: 30px;
+        margin: 3px 6px;
+        border-radius: 25px;
+        background-color: rgb(248, 238, 238);
+        box-shadow: 5px 3px 2px rgb(227, 217, 227);
+    }
+    #services .box img{
+        height: 120px;
+        display: block;
+        margin: auto;
+        padding: 5px;
+    } 
+    #services .box p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    } 
+    #client-section{
+        height: 345px;
+        position: relative;
+    }
+    #client-section::before{
+        content: "";
+        position: absolute;
+        background-image: url(/Images/salad-gf059bf98e_1920.jpg);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .client-item{
+        padding: 35px;
+    }
+    #clients img{
+        height: 130px;
+    }
+    .apple-logo {
+        margin-bottom: 30px;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/Images/food-logo 2.png" alt="MyOnlineMeal.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum
+        molestias impedit sequi cum nobis molestiae,  
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      </p>
+      <button class="btn">Order Now</button>
+    </section>
+    <section>
+        <section class="services-container">
+            <h1 class="h-primary center">Our services</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="/Images/foodCatering.png" alt="">
+                    <h2 class="h-secondary center">Food Catering</h2>
+                    <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium non quidem quaerat saepe amet praesentium distinctio? Optio corporis provident quod id deleniti delectus,</p>
+                </div>
+                <div class="box">
+                    <img src="/Images/foodCategory2.webp" alt="">
+                    <h2 class="h-secondary center">Food Category</h2>
+                    <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium non quidem quaerat saepe amet praesentium distinctio? Optio corporis provident quod id deleniti delectus,</p>
+                </div>
+                <div class="box">
+                    <img src="/Images/foodDelivery2.png" alt="" class="food-delivery">
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium non quidem quaerat saepe amet praesentium distinctio? Optio corporis provident quod id deleniti delectus,</p>
+                </div>
+            </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="/Images/appleLogo.png" alt="Our Client" class="apple-logo">
+            </div>
+            <div class="client-item">
+                <img src="/Images/windows-g0edd8fd1b_1280.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="/Images/skypeLogo.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="/Images/hpLogo.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+  </body>
+</html>
