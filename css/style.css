@@ -38,18 +38,19 @@ html {
 }
 #navbar ul li {
   list-style: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 #navbar ul li a {
-  display: block;
-  padding: 4px 20px;
+  padding: 5px 20px 7px 20px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 15px;
   color: white;
+  margin: 0 10px;
 }
 #navbar ul li a:hover {
   color: black;
   background-color: white;
+  transition: 0.3s;
 }
 #home {
   display: flex;
