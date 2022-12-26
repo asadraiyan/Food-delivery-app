@@ -55,7 +55,7 @@ html {
 #home {
   display: flex;
   flex-direction: column;
-  padding: 3px 200px;
+  padding: 2px 200px;
   justify-content: center;
   align-items: center;
   height: 475px;
@@ -79,7 +79,7 @@ html {
 }
 .h-primary {
   font-size: 3rem;
-  padding: 15px;
+  padding-top: 30px;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 .h-secondary {
@@ -129,7 +129,7 @@ html {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 #client-section {
-  height: 345px;
+  /* height: 345px; */
   position: relative;
 }
 #client-section::before {
