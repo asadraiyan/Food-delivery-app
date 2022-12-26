@@ -8,14 +8,12 @@ html {
 }
 #navbar {
   display: flex;
+  height: 80px;
   position: sticky;
   top: 0;
   align-items: center;
   z-index: 1;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-}
-#logo {
-  margin: 15px 15px;
 }
 #logo img {
   margin: 3px 30px;
@@ -55,22 +53,22 @@ html {
 #home {
   display: flex;
   flex-direction: column;
-  padding: 2px 200px;
   justify-content: center;
   align-items: center;
-  height: 475px;
+  height: 300px;
 }
 #home::before {
   content: " ";
   background: url(/Images/italian-cuisine-ge079cefe6_1920.jpg) no-repeat center
     center/cover;
-  height: 80%;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: -1;
   opacity: 0.9;
+  background-position: bottom;
 }
 #home h1 {
   color: white;
@@ -78,7 +76,7 @@ html {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 .h-primary {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 30px;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
@@ -90,16 +88,17 @@ html {
 #home p {
   color: white;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 .btn {
-  padding: 5px 22px;
+  padding: 3px 15px;
   background-color: rgb(239, 204, 198);
   border: 2px solid rgb(49, 47, 47);
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
+  margin-top: 10px;
 }
 .btn:hover {
   background-color: rgb(221, 235, 221);
@@ -109,7 +108,7 @@ html {
 }
 #services {
   display: flex;
-  margin: 34px;
+  margin: 15px 30px 30px 30px;
 }
 #services .box {
   /* border: 2px solid blue; */
@@ -146,8 +145,9 @@ html {
 
 #clients {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .client-item {
   padding: 35px;

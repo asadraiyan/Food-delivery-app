@@ -1,13 +1,14 @@
 #navbar{
 flex-direction: column;
+height: 110px;
+justify-content: center;
 }
 #navbar ul li a{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0px 5px;
 }
 #home{
-height: 400px;
-padding: 3px 67px;
+height: 250px;
 margin-bottom: 20px;
 }
 /* #home::before{
@@ -22,8 +23,6 @@ margin-bottom: 20px;
 #services .box{
 margin-top: 10px;
 }
-#client-section{
-}
 #clients{
     flex-wrap: wrap;
 }
@@ -37,10 +36,13 @@ width: 75%;
 }
 .h-primary {
     font-size: 25px;
-    margin-top: 140px;
+    /* margin-top: 140px; */
 }
 .btn{
     font-size: 13px;
     padding: 4px 8px;
     margin-top: 10px;
+}
+.btn-1 {
+    font-size: 13px;
 }
